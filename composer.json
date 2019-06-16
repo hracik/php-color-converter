@@ -1,0 +1,20 @@
+{
+    "name": "hracik/php-color-converter",
+    "description": "Color converter.",
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "8"
+    },
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Hracik\\ColorConverter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hracik\\ColorConverter\\Tests\\": "tests/"
+        }
+    }
+}
