@@ -79,7 +79,7 @@ class ColorConverter
 			$h /= 6;
 		}
 		// Return HSL Color as array
-		return array(round($h,3), round($s,3), round($l,3));
+		return array(round($h,5), round($s,5), round($l,5));
 	}
 
 	/**
