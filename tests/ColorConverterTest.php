@@ -104,9 +104,9 @@ class ColorConverterTest extends TestCase
 	{
 		return [
 			[[0,0,0], '#000000'],
-			[[255,90,0], '#ff5a00'],
-			[[255,255,255], '#ffffff'],
-			[[140,140,140], '#8c8c8c'],
+			[[255,90,0], '#FF5A00'],
+			[[255,255,255], '#FFFFFF'],
+			[[140,140,140], '#8C8C8C'],
 		];
 	}
 
@@ -117,9 +117,9 @@ class ColorConverterTest extends TestCase
 	{
 		return [
 			['#000000', [0,0,0]],
-			['#ffffff', [255,255,255]],
-			['#8c8c8c', [140,140,140]],
-			['#ff5a00', [255,90,0]],
+			['#FFFFFF', [255,255,255]],
+			['#8C8C8C', [140,140,140]],
+			['#FF5A00', [255,90,0]],
 		];
 	}
 
@@ -129,7 +129,7 @@ class ColorConverterTest extends TestCase
 	public function hex2hslProvider()
 	{
 		return [
-			['#ff5a00', [0.059, 1.0, 0.5]],
+			['#FF5A00', [0.059, 1.0, 0.5]],
 		];
 	}
 
@@ -139,7 +139,7 @@ class ColorConverterTest extends TestCase
 	public function hsl2hexProvider()
 	{
 		return [
-			[[0.059,1.0,0.5], '#ff5a00'],
+			[[0.059,1.0,0.5], '#FF5A00'],
 		];
 	}
 }

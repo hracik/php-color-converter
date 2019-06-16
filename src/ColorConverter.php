@@ -9,7 +9,7 @@ class ColorConverter
 	 */
 	public static function hex2rgb(string $hex): array
 	{
-		return sscanf(strtolower($hex), "#%02x%02x%02x");
+		return sscanf(strtoupper($hex), "#%02x%02x%02x");
 	}
 
 	/**
@@ -22,7 +22,7 @@ class ColorConverter
 	public static function rgb2hex(array $rgb) :string
 	{
 		list($r,$g,$b) = $rgb;
-		return sprintf("#%02x%02x%02x", $r, $g, $b);
+		return sprintf("#%02X%02X%02X", $r, $g, $b);
 	}
 
 	/**
@@ -38,7 +38,7 @@ class ColorConverter
 	/**
 	 * Converts HSL color to RGB hex code
 	 * Input: Array(Hue, Saturation, Lightness) - Values from 0 to 1
-	 * Output: String hex value (#000000 - #ffffff)
+	 * Output: String hex value (#000000 - #FFFFFF)
 	 * @param array $hsl
 	 * @return string
 	 */
